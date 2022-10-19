@@ -1,4 +1,4 @@
-/*const marcas = [{nombre: "chevrolet", precioBase: 1000},
+const marcas = [{nombre: "chevrolet", precioBase: 1000},
                 {nombre: "peugeot", precioBase: 1200},
                 {nombre: "audi", precioBase: 2000},
                 {nombre: "mercedes benz", precioBase: 2500},
@@ -29,7 +29,7 @@ function precioXServicio(servicio){
 
 function CalcularServicio (marca, serv){
     let precioServicios = 0;
-    while((serv != "s") && (marca == "Ford" || marca == "Chevrolet" || marca == "Peugeot" || marca == "Audi" || marca == "Mercedes Benz")){
+    while((serv != "s") && (marca == "ford" || marca == "chevrolet" || marca == "peugeot" || marca == "audi" || marca == "Mercedes Benz")){
         precioServicios =  precioServicios +  precioXServicio(serv);
         alert("El SUBTOTAL de su servicio es de "+ (precioServicios + precioXMarca(marca)));
         serv = prompt("Ingrese otro servicio que desee en su automovil. (S para salir)");
@@ -38,7 +38,3 @@ function CalcularServicio (marca, serv){
     return alert("El precio TOTAL de su servicio es de "+ (precioServicios + precioXMarca(marca)));
 }
 
-*/
-
-let marca = document.getElementsByClassName("opcionMarca");
-console.log(marca.innerHTML);
