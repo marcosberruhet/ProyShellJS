@@ -1,0 +1,422 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logoShell {
+  width: auto;
+  height: 50px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.logoShell:hover {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  border-bottom: 1px solid red;
+}
+
+header {
+  background-color: #dacd19;
+  /* border: 5px solid blanchedalmond; */
+  border-bottom: 5px solid white;
+}
+
+.navbar {
+  background-color: #dacd19;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.navIndex li {
+  font-family: "Electrolize", sans-serif;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navIndex li a {
+  font-size: 19px;
+  background-color: #dacd19;
+}
+
+.imagenPortada {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: center;
+}
+
+.containerPortada:hover .imagenPortada {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.containerPortada {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.textoShellBox {
+  border-top: 10px solid white;
+  height: 70px;
+  font-family: "Electrolize", sans-serif;
+  background-color: lightyellow;
+  line-height: 50px;
+  text-align: center;
+  font-size: x-large;
+}
+
+.btnStore {
+  font-family: "Electrolize", sans-serif;
+  height: 50px;
+}
+
+.textoStore {
+  color: black;
+  text-decoration: none;
+}
+
+.textoStore:hover {
+  text-decoration: none;
+  color: gray;
+}
+
+.smartphone {
+  width: auto;
+  height: 30px;
+  padding-right: 8px;
+}
+
+.containerLatam {
+  background-color: lightyellow;
+  overflow: hidden;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: auto;
+  border-top: 10px solid white;
+}
+
+.imagenLatam {
+  width: auto;
+  height: 400px;
+  background-image: url("imagenes/cards.png");
+  background-size: contain;
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  padding-top: 70px;
+  margin: auto;
+  /* border: 5px solid white; */
+}
+
+.imagenLatam:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: 1s;
+  transition: 1s;
+  overflow: hidden;
+}
+
+.textoLatam {
+  font-family: "Electrolize", sans-serif;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  /* border: 5px solid white; */
+  padding-top: 30px;
+}
+
+.textoLatam h2 {
+  background-color: #dacd19;
+  font-size: x-large;
+  text-align: center;
+}
+
+.textoLatam li {
+  list-style: none;
+  font-size: medium;
+  text-align: center;
+  line-height: 30px;
+}
+
+.videoShell {
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  border: 5px solid white;
+  padding-top: 5px;
+  padding: 10px;
+}
+
+.textoConectate {
+  margin: 0;
+  font-family: "Electrolize", sans-serif;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  /* border: 5px solid white; */
+  padding-top: 30px;
+}
+
+.textoConectate h2 {
+  background-color: #dacd19;
+  font-size: x-large;
+}
+
+.textoConectate p {
+  font-size: large;
+  line-height: 30px;
+}
+
+.textoOportunidades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  background-color: white;
+  height: 80px;
+}
+
+.btnOportunidades {
+  font-family: "Electrolize", sans-serif;
+  height: 70px;
+}
+
+.btnOportunidades a {
+  color: black;
+  text-decoration: underline;
+  -webkit-text-decoration-color: red;
+          text-decoration-color: red;
+}
+
+.redSocial {
+  padding: 30px;
+  height: 140px;
+}
+
+.redSocial:hover {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+.instagram {
+  height: 130px;
+}
+
+.containerFooter {
+  /* border-top: 5px solid white;     */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70px;
+  background-color: lightgrey;
+}
+
+.containerFooter .atencionCliente {
+  font-size: medium;
+  line-height: 70px;
+  text-decoration: none;
+  color: black;
+}
+
+.containerFooter .atencionCliente:hover {
+  color: gray;
+}
+
+footer a {
+  font-size: large;
+  margin: auto;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+/* estilo sección SERVICIOS */
+.containerEstacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sectionServicios {
+  background-color: lightyellow;
+}
+
+.imagenEstacion {
+  width: 100%;
+  height: 350px;
+  background-image: url("/imagenes/gas-station-1161871_960_720.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.textoEstacion {
+  padding: 5px;
+  font-family: "Electrolize", sans-serif;
+  text-align: center;
+}
+
+.textoEstacion h2 {
+  text-decoration: overline;
+  -webkit-text-decoration-color: red;
+          text-decoration-color: red;
+  padding-top: 10px;
+}
+
+.imagenLavado, .imagenLubricante {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+/* estilo sección SUCURSALES */
+.mainSucursal {
+  background-color: lightyellow;
+}
+
+.containerImagenSucursal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.imagenSucursales {
+  width: 100%;
+  height: 350px;
+  background-image: url(imagenes/luces-estacion.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-bottom: 10px solid white;
+}
+
+.containerTextoSucursales {
+  background-color: lightyellow;
+  font-family: "Electrolize", sans-serif;
+  text-align: center;
+}
+
+.mapa {
+  width: 500px;
+  height: 400px;
+  padding: 20px;
+  border: 5px solid white;
+  background-color: lightgray;
+}
+
+.mapa iframe {
+  padding-left: 45px;
+  width: 400px;
+  height: 300px;
+}
+
+.mapa p {
+  padding: 10px;
+  font-family: "Electrolize", sans-serif;
+  text-align: center;
+  -webkit-text-decoration: 5px underline black;
+          text-decoration: 5px underline black;
+}
+
+/* estilo sección CONTACTO */
+.containerForm {
+  background-color: lightyellow;
+}
+
+.imagenContacto {
+  width: 100%;
+  height: 500px;
+  background-image: url(imagenes/refuel-2157211_960_720.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  border-bottom: 5px solid white;
+}
+
+.textoContactenos {
+  font-size: x-large;
+  font-style: italic;
+}
+
+/* estilo sección QUIENES SOMOS */
+.imagenQs {
+  width: 100%;
+  height: 350px;
+  background-image: url(imagenes/surtidorNieveViejo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.imagenQsVertical {
+  width: 100%;
+  height: 700px;
+  background-image: url(imagenes/surtidorOld.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 5px solid white;
+}
+
+.textoGrupoShell {
+  font-size: large;
+  font-family: "Electrolize", sans-serif;
+  text-align: center;
+  border-top: 5px solid white;
+  border-right: 5px solid white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.textoGrupoShell h2 {
+  background-color: lightyellow;
+}
+
+.textoGrupoShell p {
+  font-style: italic;
+  line-height: 45px;
+  padding-top: 15px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.textoGrupoShell img {
+  width: auto;
+  height: 150px;
+}
+/*# sourceMappingURL=estilo.css.map */
