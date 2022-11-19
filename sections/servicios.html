@@ -57,6 +57,26 @@
         </header>
 
         <main class="">
+            <div class="sel">
+                <select id="marca" class="custom-select form-select col-md-12" aria-label="Default select example">
+                    <!-- <option selected>Elija su marca de vehiculo</option> -->
+                    <option value="audi">Audi</option>
+                    <option value="ford">Ford</option>
+                    <option value="chevrolet">Chevrolet</option>
+                </select><br><br>
+                <select id="servicio" class="custom-select form-select col-md-12" aria-label="Default select example">
+                    <!-- <option selected>Elija el servicio a realizar</option> -->
+                    <option value="aceite">Aceite</option>
+                    <option value="filtro">Filtro</option>
+                    <option value="service completo">Service Completo</option>
+                    <option value="alineacion">Alineacion</option>
+                    <option value="balanceo">Balanceo</option>
+                </select><br><br>
+                <button id="btnCalcular" class="botonCalc col-md-12">Calcular Servicio</button><br>
+                <span class="total col-md-12" id="lblTotal"></span>
+                <iframe class="col-md-11 surtidor" src="https://petrointelligence.com/api/api_precios.html?consulta=nac" width="300px" height="200px" frameborder="0"></iframe>
+
+            </div>
             <div class="imagenEstacion"></div>
             <section class="container-fluid sectionServicios">
                 <div class="textoEstacion">
@@ -92,7 +112,9 @@
                 <a class="atencionCliente" href="https://www.0800telefono.org/shell-argentina/" target="_blank">Atención al cliente</a>
             </div>
         </footer>
-
+        <script src="/js/shop.js"></script>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>

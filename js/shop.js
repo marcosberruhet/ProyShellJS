@@ -47,10 +47,10 @@ function CalcularServicio (marca, serv){
 // opcMarca.addEventListener("change", function() {
 //     console.log(opcMarca.value)
 // });
-
+/*
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("marca").addEventListener("change", mostrar);
-  });
+});
 
 const select = document.getElementById("marca");
 const mostrar = () => {
@@ -60,7 +60,7 @@ const mostrar = () => {
     console.log(`${opcionSeleccionada.text}`);
 };
 
-
+*/
 // document.getElementById("marca").onchange = function () {marcaSel()};
 // function marcaSel(){
 //       let marca = document.getElementById("marca").value;
@@ -84,5 +84,10 @@ let total = (precioXMarca(marca)) + (precioXServicio(servicio));
 let boton = document.getElementById("btnCalcular");
 
 boton.onclick = () =>{
-     document.getElementById("lblTotal").innerText = `El total de su servicio es de ${total}`;
+    setTimeout(()=>{
+        document.getElementById("lblTotal").innerText = `El total de su servicio es de ${total}`;
+
+    }, 500);
 };
+
+

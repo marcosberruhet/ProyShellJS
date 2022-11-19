@@ -420,3 +420,31 @@ footer a {
   height: 150px;
 }
 /*# sourceMappingURL=estilo.css.map */
+
+.sel select{
+  position: relative;
+  font-family: "Electrolize", sans-serif;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  text-align: center;
+
+} 
+
+.sel span{
+  font-family: "Electrolize", sans-serif;
+  background-color: lightyellow;
+  text-align: center;
+  align-content: center;
+}
+
+.sel button{
+  position: relative;
+  font-family: "Electrolize", sans-serif;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+.sel iframe{
+  align-items: center;
+  align-content: center;
+}
