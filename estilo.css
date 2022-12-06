@@ -435,6 +435,8 @@ footer a {
   background-color: lightyellow;
   text-align: center;
   align-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .sel button{
