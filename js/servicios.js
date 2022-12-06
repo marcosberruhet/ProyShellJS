@@ -78,16 +78,25 @@ select.addEventListener("change",
 );
 */
 
-let marca = document.getElementById("marca").value;
-let servicio = document.getElementById("servicio").value;
-let total = (precioXMarca(marca)) + (precioXServicio(servicio));
+// let marca = document.getElementById("marca").value;
+// let servicio = document.getElementById("servicio").value;
+// let total = (precioXMarca(marca)) + (precioXServicio(servicio));
+
+
 let boton = document.getElementById("btnCalcular");
 
 boton.onclick = () =>{
+
+    let marca = document.getElementById("marca").value;
+
+    let servicio = document.getElementById("servicio").value;
+
+    let total = (precioXMarca(marca)) + (precioXServicio(servicio));
+
     setTimeout(()=>{
+
         document.getElementById("lblTotal").innerText = `El total de su servicio es de ${total}`;
 
     }, 500);
+
 };
-
-
